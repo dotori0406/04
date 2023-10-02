@@ -4,13 +4,14 @@
 int main(int argc, char *argv[])
 {
     int x,y;
-    x=10;
-    y=3;
-    printf("result is %d\n",x+y);
-    printf("result is %d\n",x-y);
-    printf("result is %d\n",x*y);
-    printf("result is %d\n",x/y);
-    printf("result is %d\n",x%y);
+    printf("Input ywo integraters : ");
+    scanf("%i %i",&x,&y);
+    
+    printf("%i+%i=%i \n",x,y,x+y);
+    printf("%i+%i=%i \n",x,y,x-y);
+    printf("%i+%i=%i \n",x,y,x*y);
+    printf("%i+%i=%i \n",x,y,x/y);
+    printf("%i+%i=%i \n",x,y,x%y);
   system("PAUSE");	
   return 0;
 }
