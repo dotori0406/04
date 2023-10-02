@@ -3,10 +3,19 @@
 
 int main(int argc, char *argv[])
 {
-    int x;
-    printf("Input seconds : ");
-    scanf("%i",&x);
-    printf("%i seconds - %i m : %i s \n",x,x/60,x%60);
+    int a;
+    printf("Input a year : ");
+    scanf("%i",&a);
+    
+    if ( (a%4==0 && a%100!=0) || (a%400==0) )
+    {
+         printf("%i is leap year.\n",a);
+    }
+    else
+    {
+        printf("%i is not leap year. \n",a);
+    }
+
     
   system("PAUSE");	
   return 0;
